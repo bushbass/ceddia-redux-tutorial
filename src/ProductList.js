@@ -1,6 +1,6 @@
-import React from "react";
-import { connect } from "react-redux";
-import { fetchProducts } from "./productActions";
+import React from 'react';
+import { connect } from 'react-redux';
+import { fetchProducts } from './productActions';
 
 class ProductList extends React.Component {
   componentDidMount() {
@@ -20,10 +20,10 @@ class ProductList extends React.Component {
 
     return (
       <ul>
-        {/* {products.map(product =>
+        {products.map(product => (
           <li key={product.id}>{product.name}</li>
-        )} */}
-        {console.log(products)}
+        ))}
+        {console.log(products, 'from ProducList component')}
       </ul>
     );
   }
